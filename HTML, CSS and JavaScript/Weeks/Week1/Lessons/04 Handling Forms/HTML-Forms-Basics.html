@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <!-- 
+            SPAN
+            Like div, span has no default style
+            span is used for a few words
+        -->
+
+    </head>
+    <body>
+        <!--
+                BASIC FORM STRUCTURE
+                <form action="destination" method="get or post">
+                    . . . form elements go here . . .
+                    <input type="submit">
+                </form>
+
+                DESTINATION
+                action="destination" tells the browser
+                what program to send the form data to e.g.:
+                
+                <form action="http://www.server.com/subdirectory/program.php">
+                
+                If the program is on same server as the html file:
+                <form action="subdirectory/program.php">
+
+                If the program in same directory as the html file:
+                <form action="program.php">
+
+                GET OR POST
+
+                THE GET METHOD
+                For a project you are developing, using get is a good idea. Seeing the form data in the URL is useful
+                However, you cannot keep any secrets get can only handle a small transmission e.g. a few hundred letters/characters
+
+                THE POST METHOD
+                method="post"
+                The main difference to get is you cannot see any data. Using post is better for keeping secrets
+                post can handle a big transmission e.g. files
+            -->
+
+        <form action="http://ihome.ust.hk/~rossiter/cgibin/show_everything.php" method="get">
+            <p>Please enter any feedback you have.</p>
+            <textarea rows="3" cols="60" name="feedback" >
+                Please enter your text here
+            </textarea>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>

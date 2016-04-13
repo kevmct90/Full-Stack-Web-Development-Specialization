@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+</head>
+<body>
+       <!--  ELEMENTS & ATTRIBUTES WE WILL LOOK AT
+            <input type="file">
+        -->
+
+        <!-- UPLOADING FILES - FORM STRUCTURE
+            <form action="destination" method="post" enctype="multipart/formdata">
+                . . . other form input elements go here, if any . . .
+                <input type="file" name="fileToUpload">
+                <input type="submit">
+            </form>
+        -->
+
+        <!-- enctype tells the browser when send a file attach file to message that is sent to server -->
+    <form method="post" enctype="multipart/formdata" action="http://ihome.ust.hk/~rossiter/cgibin/show_everything.php">
+            <p>Select the file you want to upload</p>
+            <input type="file" name="fileToUpload">
+            <p>Press this button to send it</p>
+            <input type="submit" value="Upload the file">
+    </form>
+</body>
+</html>

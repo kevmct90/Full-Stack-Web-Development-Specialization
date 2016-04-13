@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    </head>
+    <body>
+        <form action="http://ihome.ust.hk/~rossiter/cgibin/show_everything.php" >
+
+            Please enter your name. <br>
+            <input type="text" name="feedback"> <br> <br>
+
+            <!-- TEXT, CHECKBOX & RADIO -->
+            <!-- Each checkbox will have to be given the same name -->
+            Please select each of the following that you have. <br>
+            <input type="checkbox" name="items" value="car">Car <br>
+            <input type="checkbox" name="items" value="teddy bear">Teddy bear <br>
+            <input type="checkbox" name="items" value="toothbrush">Toothbrush <br> <br>
+
+            <!-- Each Radio button will have to be given the same name -->
+            Please indicate your intelligence level. <br>
+            <input type="radio" name="iq" value="high">High <br>
+            <input type="radio" name="iq" value="medium" checked>Medium <br>
+            <input type="radio" name="iq" value="low">Low <br> <br>
+
+            <!--PASSWORD -->
+            <p>What is the secret password?</p>
+            <input type="password" name="userpassword"> <br>
+
+            <!--SELECTING FROM A LIST-->
+            <p>What city would you like to go to?</p>
+            <select name="cities">
+                <option value="hk">Hong Kong</option>
+                <option value="vc">Vancouver</option>
+                <option value="sf">San Francisco</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </body>
+    </html>
