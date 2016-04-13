@@ -9,14 +9,21 @@
 		<form>
 	        <fieldset>
 	            <legend>Your Face</legend>
-	            Your image: <input type="file" name="fileToUpload">
-	            
+	            Your image: <input type="file" name="fileToUpload" required>
 	        </fieldset> 
 	        <br>
 	        <fieldset>
-	            <legend>Your General Details</legend>
-	            Favourite cartoon? <input type="text" name="favCartoon"> <br>
-	            Favourite pizza? <input type="text" name="lastName"> <br>
+				<legend>Your General Details</legend>
+				Name: <input type="text" name="name" placeholder="Your full name" required>
+				<br>
+				Gender: <input type="radio" name="gender" value="male" checked> Male
+            	<input type="radio" name="gender" value="female" > Female
+            	<br>
+            	Date of birth: <input type="date" name="dob">
+            	<br>
+            	Favourite Color: <input type="color" name="fav-color">
+         		
+
 	        </fieldset> 
 	        <br>
 	        <fieldset>
