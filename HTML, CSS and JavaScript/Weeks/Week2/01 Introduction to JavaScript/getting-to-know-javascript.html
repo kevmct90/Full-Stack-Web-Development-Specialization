@@ -1,0 +1,104 @@
+<!--
+JAVASCRIPT FUNCTIONS WE WILL LOOK AT
+alert()
+prompt()
+confirm()
+
+<html>
+<head>
+. . . load JavaScript libraries here . . .
+</head>
+<body>
+. . . your JavaScript code typically goes at the end of body . . .
+</body>
+</html>
+
+-->
+
+<!-- WHERE to put JavaScript 
+JAVASCRIPT IN THE SAME FILE
+<script>
+function surprise() {
+alert("Hello!");
+}
+</script>
+-->
+
+<!--
+	JAVASCRIPT IN ANOTHER FILE
+<script src="mycode.js"></script>
+In mycode.js:
+function surprise() {
+alert("Hello!");
+}
+-->
+
+<!-- 
+SIMPLE INTERACTION
+There are 3 JavaScript popups:
+alert()
+confirm()
+prompt()
+-->
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <title>Example of alert()</title>
+        <!-- 
+		SHOW A MESSAGE - ALERT()
+		alert() shows text to the user e.g.
+		alert("Welcome!");
+		-->
+        <script>
+            alert("Welcome to my page!");
+        </script>
+        
+        
+        <!--
+        MAKING A DECISION - CONFIRM()
+		confirm() displays a popup box with a message,
+		along with an OK and a Cancel button
+		-->
+		<script>
+            if (confirm("Want to go to Disneyland?")) 
+                document.location.href
+                ="http://park.hongkongdisneyland.com";
+        </script>
+
+        <!--
+        VARIABLES
+		A variable is like a box
+		You can make a variable and put something in it e.g
+		var totalCost = 7000;
+		Later, you can take it out of the box and use it
+		You can change what is stored in the box any time
+		-->
+
+		<!--
+		SIMPLE TEXT INPUT - PROMPT()
+		For getting input from the user, you can
+		use prompt(), e.g:
+		
+		var user_name; // Create a variable
+		user_name=prompt("What is your name?");
+
+		You don't have to create a variable before you use it
+		However, it is good habit to get into
+		-->
+        <script>
+            var user_name;
+            
+            user_name = prompt("What is your name?");
+            document.write("Welcome to my page "
+                           + user_name + "!" );
+            //var kkk;
+            
+            /* 	at the end of each line use a semicolon
+            */
+        </script>
+    </head>
+</html>
+
