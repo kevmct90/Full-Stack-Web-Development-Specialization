@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example of while()</title>
+        <script>
+
+            /*
+            WHILE LOOPS
+            A while loop is the simplest loop
+            . . . code goes here . . .
+            Each time the loop content is executed
+            we call it an iteration
+
+            INDEXOF()
+            string.indexOf("text")
+            gives you the location of the first "text" in the string
+            For example:
+            result will be 5
+            */
+            
+            var response, finished;
+            finished=false;
+            alert("Rossiter is a great name.");
+            while (!finished){
+                response=prompt("Do you agree?");  
+                if (response.indexOf("y")==0)  
+                    finished=true; 
+            }
+        </script>
+    </head>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example of do .. while()</title>
+        <script>
+        /*
+        DO ... WHILE LOOPS
+        do ... while is an 'upside-down' version of while
+        . . . code goes here . . .
+        A do ... while loop will be executed at least once
+        */
+            var response, finished;
+            finished=false;
+            alert("Rossiter is a great name.");
+            do {
+                response=prompt("Do you agree?");  
+                if (response.indexOf("y")==0)  
+                    finished=true; 
+            } while (!finished);
+        </script>
+    </head>
+</html>

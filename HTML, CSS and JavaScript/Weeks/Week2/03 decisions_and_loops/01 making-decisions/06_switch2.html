@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+        /* 
+        Used for a series of comparisons:
+        switch(variable_name) {
+        case "option_1": do_something_1();
+        break;
+        . . . : . . .
+        case "option_n": do_something_n();
+        break;
+        default: do_something_default();
+        }
+        */
+        
+        var user_name = prompt("What country would you like to visit?");
+        switch(user_name) {
+            case "Canada":
+            case "France":
+                alert("Take me also!"); 
+                break;
+            case "Japan":
+            case "Philippines":
+                alert("Great! Have fun!"); 
+                break;
+            case "North Korea":
+                alert("Oh! Good luck!"); 
+                break;
+            default:
+                alert("I am sure you will have a great time");
+        }
+        </script>
+    </head>
+</html>
