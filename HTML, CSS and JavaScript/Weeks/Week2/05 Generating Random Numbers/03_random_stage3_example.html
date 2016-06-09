@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+        /* 
+        WE WILL LOOK AT
+		Math.random()
+		Math.floor()
+
+		OVERVIEW
+		Generate a random number
+		Set up the range
+		Throw away the decimal place
+		*/
+
+            var random_number;
+
+			random_number = Math.random();
+			alert( random_number );
+            var random_number;
+
+            /*
+            SETTING UP THE RANGE
+			So far the random number is in the range 0 up to 1
+			Multiply in order to get the range you want, i.e.
+			We now have a number in the range [0, max_value)
+			*/
+            var random_number;
+            
+            random_number = Math.random() * 8;
+            alert("Random number in the range 0 to " + "7.9999999:\n" + random_number );
+            
+            /*
+            THROW AWAY THE DECIMAL PLACE
+			There is still a decimal place
+			Math.floor() dumps the decimal place
+			For example, 2.82248 becomes 2
+			*/
+            random_number = Math.random() * 50;
+            random_number = Math.floor( random_number );
+            alert("Random number in the range 0 to 49: " + 
+                   random_number);
+
+
+            
+        </script>
+    </body>
+</html>
+

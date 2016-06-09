@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+            /*
+            ARRAY FUNCTIONS
+            [] push() concat()
+            length shift()
+            join() pop()
+            unshift()
+            */
+
+            /*
+            ARRAY
+            An array is a linear continuous storage
+            0 1 n
+            ...
+            2
+            You can think array as a group of boxes
+            Each box has a unique identity, which is called an index
+            The index of the first box is 0
+            */
+
+            var pets = ["Dog", "Cat", "Rabbit"]
+
+            var pets_10 = new Array(10)
+
+            var petsjoin = ["Dog", "Cat", "Rabbit"]
+            /* join pets and put add between them in string */
+            alert(petsjoin.join(" and "))
+
+            /*
+            GETTING SOMETHING
+            You can retrieve something like this:
+            */
+            alert(pets[2]) // This shows "Rabbit"
+
+            /* 
+            ARRAY SIZE
+            You can know the size of an array (i.e. how many boxes
+            it has) using array.length:
+            */
+            alert(pets.length)
+
+            /*
+            ADDING TO THE END
+            Add a new element to the end of an array with array.push():
+            The index are automatically updated
+            var pets = ["Dog", "Cat", "Rabbit"];
+            */     
+            pets.push("Hamster")
+            alert(pets)
+
+            /*
+            REMOVING FROM THE BACK
+            To remove an element from the end, use array.pop():
+            pop() returns the removed element, so result is "Rabbit"
+            */
+            var pets = ["Dog", "Cat", "Rabbit"]
+            var result = pets.pop()
+            alert(result)
+            // Now pets is [Dog", "Cat"]
+
+            /*
+            REMOVING FROM THE FRONT
+            array.shift() removes an element from the front:
+            shift() returns the removed element, so result is "Dog"
+            The index are automatically updated
+            */
+            var pets = ["Dog", "Cat", "Rabbit"]
+            var result = pets.shift()
+            // Now pets is ["Cat", "Rabbit"]
+
+            /*
+            COMBINING TWO ARRAYS
+            Use array1.concat(array2) to combine two arrays into one:
+            */
+            var pets = ["Dog", "Cat", "Rabbit", "Hamster"]
+            var primes = [2, 3, 5, 7, 11]
+            var result = pets.concat(primes)
+            // result is ["Dog", "Cat", "Rabbit", "Hamster",
+            // 2, 3, 5, 7, 11]
+            alert(result)
+
+        </script>
+    </body>
+</html>
